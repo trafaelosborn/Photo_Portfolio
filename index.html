@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Taylor Osborn</title>
+  
+  <link rel="icon" href="img/to-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slicknav.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+  <div class="background">
+          
+  </div>
+<body>
+    <div class="main-menu">
+        <div class="logo-area">
+          <a href="index.html" id="link"><img src="logo.png" alt="logo"></a>
+        </div>
+          <div class="inner-main-menu">
+           
+            <ul id="menu">
+              <li><a href="" id="link">about</a></li>
+              <li><a href="portfolio.html" id="link">portfolio</a></li>
+              <li><a href="https://www.etsy.com/shop/TaylorOsbornPhoto" target="_blank" id="link">shop</a></li>
+              <li><a href="contact.html" id="link">say hello</a></li>
+            </ul>
+         
+          </div>
+        </div>
+
+
+
+
+  
+      </body>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+
+  <!--Navbar-->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav();
+  });
+  </script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $("body").css("display", "none");
+   
+      $("body").fadeIn(2000);
+   
+      $("a#link").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(1000, redirectPage);      
+      });
+           
+      function redirectPage() {
+          window.location = linkLocation;
+      }
+  });
+  </script>
+ 
+ 
+
+</body>
+</html>

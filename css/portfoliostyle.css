@@ -1,0 +1,236 @@
+body { display: none; }
+
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+
+
+
+    .logo-area { 
+        width: 250px; 
+        height: 100px; 
+         
+        position: fixed; 
+        left: 50%; 
+        top: 0; 
+        content: ""; 
+        margin-left: -125px;
+        margin-top: 20px;
+    }
+
+  .inner-main-menu {position: fixed; margin: 0; width: 1170px; margin-left: 9.85%; position: fixed;}
+
+  .inner-main-menu ul {margin: 0; padding-top: 50px; list-style: none; text-align: right;}
+
+  .inner-main-menu ul li{float: none; display: inline-block;}
+  .inner-main-menu ul li:nth-child(1){float: left;}
+  .inner-main-menu ul li:nth-child(2){float: left;}
+ 
+
+  .inner-main-menu ul li a{font-family: 'Cinzel', serif; font-size: 20px; color: rgb(54, 54, 54); padding: 10px 20px; text-decoration: none;}
+
+  .inner-main-menu ul li a:hover{color: slategray;}
+
+#header {
+    position: fixed;
+    z-index: 2;
+}
+ 
+
+
+
+
+.imagediv {   
+  
+    margin-top: 30px; 
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+    
+html{
+    overflow: hidden;
+}
+
+/*portfolio gallery*/
+#gallery1 {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: .75%;
+    z-index: 1;
+}
+
+
+#solophoto {
+  height: 200px;
+  width: 300px;
+}
+
+#gallery2 {
+    position: absolute;
+    margin-top: 370px;
+    margin-left: .75%;
+     
+    z-index: 1;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  /*OVERLAY ANIMATION*/
+  .imagediv {
+    position: relative;
+    
+  }
+ 
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    
+    right: 0;
+    height: 200px;
+    width: 300px;
+    opacity: 0;
+    transition: .75s ease;
+    background-color: black;
+  }
+  
+  .imagediv:hover .overlay {
+    opacity: .65;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Cinzel', serif; 
+    opacity: 1;
+  }
+
+ 
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 600px) {
+  .row {
+    flex: 100%;
+    max-width: 100%;
+    
+  }
+  html{
+    overflow: scroll;
+}
+#gallery2 {
+  position: absolute;
+  margin-top: 810px;
+  margin-left: .75%;
+  z-index: 1;
+}
+#gallery1 {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: .75%;
+  z-index: 1;
+}
+.imagediv {   
+  
+  margin-top: 10px; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+}
+#header {
+  position: relative;
+ }
+
+ .logo-area { 
+  width: 250px; 
+  height: 100px; 
+   
+  position: relative; 
+  left: 50%; 
+  top: 0; 
+  content: ""; 
+  margin-left: -125px;
+  margin-top: 20px;
+}
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .row {
+    flex: 100%;
+    max-width: 100%;
+  }
+  html{
+    overflow: scroll;
+}
+#gallery2 {
+  position: absolute;
+  margin-top: 810px;
+  margin-left: .75%;
+  z-index: 1;
+}
+#gallery1 {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: .75%;
+  z-index: 1;
+}
+.imagediv {   
+  
+  margin-top: 10px; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+}
+#header {
+ position: relative;
+}
+
+.logo-area { 
+  width: 250px; 
+  height: 100px; 
+   
+  position: relative; 
+  left: 50%; 
+  top: 0; 
+  content: ""; 
+  margin-left: -125px;
+  margin-top: 20px;
+}
+
+}
+

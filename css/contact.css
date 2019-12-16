@@ -1,0 +1,95 @@
+body { display: none; }
+
+body, html {
+    height: 100%;
+    margin:0;
+    font-family: "Cinzel"; 
+    color: whitesmoke; 
+    text-decoration: none;
+    text-align: center;   
+}
+
+
+
+
+.background {
+     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("../img/drifrwood.jpg");
+  height: 100%;
+ 
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+    .logo-area { 
+        width: 250px; 
+        height: 100px; 
+         
+        position: fixed; 
+        left: 50%; 
+        top: 0; 
+        content: ""; 
+        margin-left: -125px;
+        margin-top: 20px;
+    }
+
+  .inner-main-menu {   
+    width: 80%;
+    position: fixed; 
+    
+    top: 0; 
+    content: ""; 
+    margin-left: 7.85%;
+    margin-top: 20px;}
+
+  .inner-main-menu ul {margin: 0; padding-top: 40px; list-style: none; text-align: right; z-index: 200;}
+
+  .inner-main-menu ul li{float: none; display: inline-block;}
+  .inner-main-menu ul li:nth-child(1){float: left;}
+  .inner-main-menu ul li:nth-child(2){float: left;}
+ 
+
+  .inner-main-menu ul li a{font-family: 'Cinzel', serif; font-size: 20px; color: whitesmoke; padding: 10px 20px; text-decoration: none;}
+
+  .inner-main-menu ul li a:hover{color: slategray;}
+
+  .title  {
+    font-family: "Cinzel"; 
+    color: whitesmoke; 
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-left: 2%;
+  }
+
+  .container {
+    background-color: black;
+    opacity: .5;
+    border-radius: 10px;
+  }
+
+  .form-control {
+    font-family: "Cinzel"; 
+    color: whitesmoke; 
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  input {
+    height: 45px;
+  }
+
+  form .submit:hover {
+    color: slategrey;
+  }
+   
+ 
+    

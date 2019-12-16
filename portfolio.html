@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Taylor Osborn</title>
+    <link rel="icon" href="img/to-favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- custom stylesheet-->
+    <link rel="stylesheet" href="css/portfoliostyle.css" />
+     <!--SlickNav-->
+    <link rel="stylesheet" href="css/slicknavPortfolio.css" />
+
+    
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <body>
+      <div class="container" id="header">
+        <div class="main-menu">
+          <div class="logo-area">
+            <a href="index.html" id="link"
+              ><img src="logodark.png" alt="logo"
+            /></a>
+          </div>
+          <div class="inner-main-menu">
+            <ul id="menu">
+              <li><a href="" id="link">about</a></li>
+              <li><a href="" id="link">portfolio</a></li>
+              <li>
+                <a
+                  href="https://www.etsy.com/shop/TaylorOsbornPhoto"
+                  target="_blank"
+                  >shop</a
+                >
+              </li>
+              <li><a href="" id="link">say hello</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="container" id="gallery-main">
+        <div class="row" id="gallery1">
+          <div class="imagediv">
+            <a href="" id="link"
+              ><img
+                src="img/PortfolioImages/PortfolioThumbnails/CabezonSmall.jpg"
+                id="soloPhoto"
+            /></a>
+            <a href="GhostTowns.html" id="link">
+              <div class="overlay">
+                <div class="text">"antiportraits"</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="imagediv">
+            <a href="" id="link"
+              ><img
+                src="img/PortfolioImages/PortfolioThumbnails/IredaleSmall.jpg"
+                id="soloPhoto"
+            /></a>
+            <a href="PacificWonderland.html" id="link">
+              <div class="overlay" >
+                <div class="text">"pacific wonderland"</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="imagediv">
+            <a href="nyc.html" id="link"
+              ><img
+                src="img/PortfolioImages/PortfolioThumbnails/NYCSmall.jpg"
+                id="soloPhoto"
+            /></a>
+            <a href="nyc.html" id="link">
+              <div class="overlay" >
+                <div class="text">"gotham"</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row" id="gallery2">
+          <div class="imagediv">
+            <a href="TouristsWelcome" id="link"
+              ><img
+                src="img/PortfolioImages/PortfolioThumbnails/TouristsWelcomeSmall.jpg"
+                id="soloPhoto"
+            /></a>
+            <a href="TouristsWelcome.html" id="link">
+              <div class="overlay">
+                <div class="text">"tourists welcome"</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="imagediv">
+            <a href="HometownBlues.html" id="link"
+              ><img
+                src="img/PortfolioImages/PortfolioThumbnails/SaxophoneManSmall.jpg"
+                id="soloPhoto"
+            /></a>
+            <a href="HometownBlues.html" id="link">
+              <div class="overlay" >
+                <div class="text">"hometown blues"</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="imagediv">
+            <a href="PrairieValentine.html" id="link"
+              ><img
+                src="img/PortfolioImages/PortfolioThumbnails/PrairieValentineSmall.jpg"
+                id="soloPhoto"
+            /></a>
+            <a href="PrairieValentine.html" id="link">
+              <div class="overlay">
+                <div class="text">"prairie valentine"</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      //navbar
+      $(document).ready(function() {
+        $("#menu").slicknav();
+      });
+    </script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $("body").css("display", "none");
+   
+      $("body").fadeIn(2000);
+   
+      $("a#link").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(1000, redirectPage);      
+      });
+           
+      function redirectPage() {
+          window.location = linkLocation;
+      }
+  });
+  </script>
+
+  </body>
+</html>
